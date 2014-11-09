@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:backlinks="[/etc/tags/default/adobe]"
+    jcr:lastModified="{Date}2014-09-20T20:59:58.684+10:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Adobe"
+    jcr:title.en="Adobe"
+    sling:resourceType="cq/tagging/components/tag"/>

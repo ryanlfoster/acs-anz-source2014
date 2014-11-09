@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="/apps/sourceevent/templates/page"
+        cq:designPath="/etc/designs/sourceevent"
+        cq:lastModified="{Date}2014-10-06T22:33:03.187-06:00"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/apps/sourceevent/templates/page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Hotels"
+        sling:resourceType="sourceevent/components/page/page"
+        pageTitle="Hotels">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <mobilemenustrip
+                jcr:created="{Date}2014-09-20T21:35:37.775+10:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-09-20T21:35:37.775+10:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sourceevent/components/content/mobilemenustrip"/>
+            <sectionbanner
+                jcr:created="{Date}2014-09-20T18:30:44.892+10:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-09-20T18:30:44.892+10:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sourceevent/components/content/sectionbanner"/>
+            <menustrip
+                jcr:created="{Date}2014-09-20T18:30:40.136+10:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-09-20T18:30:40.136+10:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sourceevent/components/content/menustrip"/>
+            <title
+                jcr:created="{Date}2014-09-20T18:30:23.739+10:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-10-06T22:17:15.377-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sourceevent/components/content/title"
+                alignment="titleleft"
+                text="&lt;p>Coming from out of town? Check out some of the nearby hotels!&lt;br>&#xa;&lt;/p>&#xa;"
+                textIsRich="true"
+                type="h3"/>
+            <hotel_0
+                jcr:created="{Date}2014-10-06T21:46:40.280-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-10-06T22:07:50.670-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="syd hotel dude"
+                sling:resourceType="sourceevent/components/content/hotel"
+                alignment="left"
+                bgopacity="100"
+                hoteltitle="The Sydney Boulevard Hotel"
+                text="&lt;p>$245 Deluxe Room (per room per night)&lt;br>&#xa;$235 Emerald room (per room per night)&lt;br>&#xa;$275 harbour view (per room per night)&lt;/p>&#xa;&lt;p>5 minute walk from Source!&lt;/p>&#xa;&lt;p>Phone: 9383 722&lt;br>&#xa;90 William Street, Sydney&lt;/p>&#xa;&lt;p>&lt;a target=&quot;_blank&quot; href=&quot;http://www.sydneyboulevard.com.au/&quot; adhocenable=&quot;false&quot;>http://www.sydneyboulevard.com.au/&lt;/a>&lt;/p>&#xa;"
+                textIsRich="true">
+                <image
+                    jcr:lastModified="{Date}2014-10-06T22:07:48.569-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Syd Hotel"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/sourceevent/hotels/inset-hotel-testimonials.jpg"
+                    imageCrop="167,7,435,260"
+                    imageRotate="0"
+                    linkURL="http://www.sydneyboulevard.com.au/"/>
+            </hotel_0>
+            <hotel
+                jcr:created="{Date}2014-10-06T22:07:57.667-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-10-06T22:12:32.892-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sourceevent/components/content/hotel"
+                alignment="left"
+                bgopacity="100"
+                hoteltitle="Oaks Hyde Park Plaza"
+                text="&lt;p>$200 Room (per room per night)&lt;/p>&#xa;&lt;p>6 minute walk from Source!&lt;/p>&#xa;&lt;p>Phone: 9331 6933&lt;br>&#xa;38 College St, Darlinghurst NSW 2000&lt;/p>&#xa;&lt;p>&lt;a adhocenable=&quot;false&quot; href=&quot;http://www.oakshotelsresorts.com/oaks-hyde-park-plaza/?gclid=CjwKEAjw-8ihBRD2t9qT3NaW7igSJAD3_sNVupew_MdRwTVodweaeSIcy3VV3X8gjumO0tLkAjtBOBoCWGDw_wcB&quot; target=&quot;_blank&quot;>http://www.oakshotelsresorts.com&lt;/a>&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                textIsRich="true">
+                <image
+                    jcr:lastModified="{Date}2014-10-06T22:12:32.892-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/sourceevent/hotels/oaks-hyde-park-plaza-exterior.jpg"
+                    imageCrop="12,0,449,323"
+                    imageRotate="0"
+                    linkURL="http://www.oakshotelsresorts.com/oaks-hyde-park-plaza/?gclid=CjwKEAjw-8ihBRD2t9qT3NaW7igSJAD3_sNVupew_MdRwTVodweaeSIcy3VV3X8gjumO0tLkAjtBOBoCWGDw_wcB"/>
+            </hotel>
+            <hotel_1
+                jcr:created="{Date}2014-10-06T22:12:54.959-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-10-06T22:30:16.392-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sourceevent/components/content/hotel"
+                alignment="left"
+                bgopacity="100"
+                hoteltitle="Medusa Boutique Hotel"
+                text="&lt;p>Deluxe - $210 or $310&amp;nbsp;(per room per night)&lt;br>&#xa;&lt;/p>&#xa;&lt;p>7 minute walk from Source!&lt;/p>&#xa;&lt;p>Phone: 1800 203 483&lt;br>&#xa;267 Darlinghurst Rd, Darlinghurst&lt;/p>&#xa;&lt;p>&lt;a adhocenable=&quot;false&quot; href=&quot;http://www.medusa.com.au/&quot;>http://www.medusa.com.au/&lt;/a>&lt;/p>&#xa;"
+                textIsRich="true">
+                <image
+                    jcr:lastModified="{Date}2014-10-06T22:30:16.392-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/sourceevent/hotels/Medusa6.jpg"
+                    imageRotate="0"/>
+            </hotel_1>
+            <hotel_4
+                jcr:created="{Date}2014-10-06T22:16:22.970-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-10-06T22:31:04.894-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sourceevent/components/content/hotel"
+                alignment="left"
+                bgopacity="100"
+                hoteltitle="Pullman Sydney"
+                text="&lt;p>$332.10&amp;nbsp;Superior Room (per room per night)&lt;/p>&#xa;&lt;p>Short walk from Source!&lt;/p>&#xa;&lt;p>Phone: 9361 8400&lt;br>&#xa;36 College Street, Sydney&lt;/p>&#xa;"
+                textIsRich="true">
+                <image
+                    jcr:lastModified="{Date}2014-10-06T22:24:37.722-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/sourceevent/hotels/6411-pullman-at-sydney-olympic-park.jpg"
+                    imageRotate="0"/>
+            </hotel_4>
+            <hotel_3
+                jcr:created="{Date}2014-10-06T22:16:06.816-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-10-06T22:32:12.668-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sourceevent/components/content/hotel"
+                alignment="left"
+                bgopacity="100"
+                hoteltitle="Abey Hotel"
+                text="&lt;p>$169 or $189 Rooms (per room per night)&lt;/p>&#xa;&lt;p>7 minutes walk from Source!&lt;/p>&#xa;&lt;p>Phone: 8070 7888&lt;br>&#xa;208 Riley Street, Surry Hills&lt;/p>&#xa;"
+                textIsRich="true">
+                <image
+                    jcr:lastModified="{Date}2014-10-06T22:32:12.668-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    imageRotate="0"/>
+            </hotel_3>
+            <hotel_2
+                jcr:created="{Date}2014-10-06T22:15:35.969-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-10-06T22:33:03.184-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sourceevent/components/content/hotel"
+                alignment="left"
+                bgopacity="100"
+                hoteltitle="All Seasons On Crown"
+                text="&lt;p>$279 &amp;amp; $239 Premium Rooms (per room per night)&lt;/p>&#xa;&lt;p>6 minutes walk from Source!&lt;/p>&#xa;&lt;p>Phone: 9360 1133&lt;br>&#xa;302 Crown St, Darlinghurst&lt;/p>&#xa;"
+                textIsRich="true">
+                <image
+                    jcr:lastModified="{Date}2014-10-06T22:33:03.184-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    imageRotate="0"/>
+            </hotel_2>
+        </par>
+        <image
+            jcr:lastModified="{Date}2014-09-20T20:45:18.590+10:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+</jcr:root>

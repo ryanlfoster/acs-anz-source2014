@@ -25,6 +25,14 @@
             <artifactId>acs-anz-source2014-bundle</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-content</artifactId>
+            <version>1.8.0</version>
+            <type>content-package</type>
+            <scope>provided</scope>
+        </dependency>
+        
     </dependencies>
     <build>
         <resources>
@@ -54,11 +62,18 @@
                 <configuration>
                     <group>Adobe</group>
                     <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
+                    <subPackages>
+                        <subPackage>
+                            <groupId>com.adobe.acs</groupId>
+                            <artifactId>acs-aem-commons-content</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
+                    </subPackages>
                     <embeddeds>
                         <embedded>
                             <groupId>${project.groupId}</groupId>
                             <artifactId>acs-anz-source2014-bundle</artifactId>
-                            <target>/apps/myproject/install</target>
+                            <target>/apps/sourceevent/install</target>
                         </embedded>
                     </embeddeds>
                     <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>

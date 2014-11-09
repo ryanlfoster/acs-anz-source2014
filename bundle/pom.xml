@@ -93,7 +93,7 @@
                 <groupId>org.apache.sling</groupId>
                 <artifactId>maven-sling-plugin</artifactId>
                 <configuration>
-                    <slingUrl>http://${crx.host}:${crx.port}/apps/myproject/install</slingUrl>
+                    <slingUrl>http://${crx.host}:${crx.port}/apps/sourceevent/install</slingUrl>
                     <usePut>true</usePut>
                 </configuration>
             </plugin>

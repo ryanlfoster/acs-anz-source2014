@@ -1,0 +1,49 @@
+
+	  <head data-sly-use.head="head.js"
+      data-sly-use.headlibRenderer="headlibs.html"
+      data-sly-use.stats="stats.js"
+      data-sly-use.wcmInit="initwcm.js"
+      data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+      
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	    <meta name="keywords" content="${head.keywords}">
+    	<meta name="description" content="${head.description}">
+    	<meta name="viewport" content="width=device-width, user-scalable=no">
+		<title>Source: ${head.properties.navTitle || head.title}</title>
+
+
+        
+           <!-- Outputs the WCM initialization code.If WCM mode is disabled nothing is rendered -->
+    <meta data-sly-test="${!wcmmode.disabled && wcmInit.isTouchAuthoring}" data-sly-call="${clientLib.all @ categories='cq.authoring.page'}" data-sly-unwrap></meta>
+    <meta data-sly-test="${!wcmmode.disabled && !wcmInit.isTouchAuthoring}" data-sly-call="${clientLib.all @ categories='cq.wcm.edit'}" data-sly-unwrap></meta>
+    <script data-sly-test="${!wcmmode.disabled && !wcmInit.isTouchAuthoring}" type="text/javascript">
+        (function() {
+
+            var cfg = ${wcmInit.undoConfig @ context='unsafe'};
+            cfg.pagePath = "${currentPage.path @ context='uri'}";
+
+            if (CQClientLibraryManager.channelCB() != "touch") {
+                cfg.enabled = ${wcmmode.edit @ context="scriptString"};
+                CQ.undo.UndoManager.initialize(cfg);
+                CQ.Ext.onReady(function() {
+                    CQ.undo.UndoManager.detectCachedPage((new Date()).getTime());
+                });
+            }
+        })();
+
+        CQ.WCM.launchSidekick("${currentPage.path @ context='uri'}", {
+            propsDialog: "${wcmInit.dialogPath @ context='uri'}",
+            locked: ${currentPage.locked @ context="scriptString"}
+        });
+    </script>
+    <!-- WCM initialization code end -->
+             <output data-sly-call="${clientLib.css @ categories='sourceevent'}" data-sly-unwrap />
+             <output data-sly-call="${clientLib.js @ categories='sourceevent'}" data-sly-unwrap />
+
+
+        <meta data-sly-include="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp" data-sly-unwrap></meta>
+        
+        
+	</head>

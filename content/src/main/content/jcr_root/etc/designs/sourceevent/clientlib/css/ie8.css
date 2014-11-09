@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+.shuttle {
+	background:url(images/ie8/shuttlecock.png);
+}
+.bicycle {
+	background:url(images/ie8/bike.png);
+
+}
+.header {
+	background-image:url(images/ie8/background.jpg);
+
+	
+}
+.header .holder {
+	background-image:url(images/ie8/header.png);
+
+
+}
+
+.twitter {
+	background-image:url(images/ie8/twitter.png);
+	
+}
+.facebook {
+	background-image:url(images/ie8/facebook.png);
+
+}
+
+.dev:first-child{
+	padding-left: 0px;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+.mobileNav .menu {
+	background-color:#cf5823;
+	background-image:url(images/ie8/menu.jpg);
+	padding: 25px 23px;
+	background-repeat: no-repeat;
+	background-position: right 18px top 13px;
+	background-size: 30px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.brown {
+	background-image:url(images/ie8/Adobe.png);;
+	background-position: right 18px top;
+	background-size:63px;
+	background-repeat:no-repeat;
+}
+
+}
+}

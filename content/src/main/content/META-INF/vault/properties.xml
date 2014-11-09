@@ -2,12 +2,17 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment>FileVault Package Properties</comment>
-<entry key="buildCount">1</entry>
-<entry key="version">1.0-SNAPSHOT</entry>
-<entry key="dependencies" />
+<entry key="createdBy">admin</entry>
+<entry key="name">SourceEventSite</entry>
+<entry key="lastModified">2014-11-06T20:48:40.854+05:30</entry>
+<entry key="lastModifiedBy">admin</entry>
+<entry key="created">2014-11-06T20:48:42.178+05:30</entry>
+<entry key="buildCount">24</entry>
+<entry key="version">1.0</entry>
+<entry key="dependencies"/>
 <entry key="packageFormatVersion">2</entry>
-<entry key="description">ACS ANZ Source 2014 Package</entry>
-<entry key="group">Adobe</entry>
-<entry key="name">acs-anz-source2014-content</entry>
-<entry key="path">/etc/packages/Adobe/acs-anz-source2014-content-1.0-SNAPSHOT.zip</entry>
+<entry key="group">my_packages</entry>
+<entry key="lastWrapped">2014-11-06T20:48:40.854+05:30</entry>
+<entry key="description"/>
+<entry key="lastWrappedBy">admin</entry>
 </properties>

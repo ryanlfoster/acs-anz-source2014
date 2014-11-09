@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:TabPanel"
+    activeTab="0"
+    helpPath="en/cq/current/wcm/default_components.html#Text Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <richFlag
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./textIsRich"
+                    value="true"
+                    xtype="hidden"/>
+                <text
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/foundation/components/textimage/dialog/items/tab1/items/text.infinity.json"
+                    xtype="cqinclude"/>
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave empty to use the page title."
+                    fieldLabel="Title"
+                    name="./agendatitle"
+                    xtype="textfield"/>
+                <speakername
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Speakers Name"
+                    fieldLabel="Speaker"
+                    name="./agendaspeaker"
+                    xtype="textfield"/>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Widget"
+            cropParameter="./image/imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            mapParameter="./image/imageMap"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            rotateParameter="./image/imageRotate"
+            sizeLimit="100"
+            title="Image"
+            xtype="html5smartimage"/>
+        <tab3
+            jcr:primaryType="cq:Widget"
+            title="Advanced Image Properties"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./image/jcr:title"
+                    xtype="textfield"/>
+                <alt
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave empty to use the title defined above"
+                    fieldLabel="Alt Text"
+                    name="./image/alt"
+                    xtype="textfield"/>
+                <linkURL
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Drop files or pages from the Content Finder"
+                    fieldLabel="Link to"
+                    name="./image/linkURL"
+                    xtype="pathfield"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Size"
+                    heightParameter="./image/height"
+                    widthParameter="./image/width"
+                    xtype="sizefield"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+                <imagemargin
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Image margin, e.g. '0 10px 0 10px'"
+                    fieldLabel="Margin"
+                    name="./imagemargin"
+                    xtype="textfield"/>
+            </items>
+        </tab3>
+        <tab4
+            jcr:primaryType="cq:Widget"
+            title="Advanced Text Properties"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <alignment
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="left"
+                    fieldDescription="Text alignment position"
+                    fieldLabel="Alignment"
+                    name="./alignment"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <left
+                            jcr:primaryType="nt:unstructured"
+                            text="Left"
+                            value="left"/>
+                        <top
+                            jcr:primaryType="nt:unstructured"
+                            text="Top"
+                            value="top"/>
+                        <right
+                            jcr:primaryType="nt:unstructured"
+                            text="Right"
+                            value="right"/>
+                        <overlap
+                            jcr:primaryType="nt:unstructured"
+                            text="Overlap"
+                            value="overlap"/>
+                        <bottom
+                            jcr:primaryType="nt:unstructured"
+                            text="Bottom"
+                            value="bottom"/>
+                    </options>
+                </alignment>
+                <textcolor
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Text Color"
+                    name="./textcolor"
+                    showHexValue="{Boolean}true"
+                    xtype="colorfield"/>
+                <left
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="left space, e.g. '15%', '40px'"
+                    fieldLabel="Left"
+                    name="./left"
+                    xtype="textfield"/>
+                <top
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="top space, e.g. '15%', '40px'"
+                    fieldLabel="Top"
+                    name="./top"
+                    xtype="textfield"/>
+                <bgcolor
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Text background Color"
+                    name="./bgcolor"
+                    showHexValue="{Boolean}true"
+                    xtype="colorfield"/>
+                <bgopacity
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="100"
+                    description="Opacity percentage (0-100)"
+                    fieldDescription="Text background opacity percentage (0-100)"
+                    fieldLabel="Background opacity"
+                    name="./bgopacity"
+                    xtype="textfield"/>
+            </items>
+        </tab4>
+        <tab5
+            jcr:primaryType="cq:Widget"
+            xtype="componentstyles"/>
+    </items>
+</jcr:root>

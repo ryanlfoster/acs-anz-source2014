@@ -1,0 +1,28 @@
+.textimage {
+  display: inline-block;
+  width: 100%;
+}
+.textimage .textimage-left {
+  float: left;
+  margin-right: 8px;
+}
+.textimage .textimage-top {
+  margin-bottom: 8px;
+}
+.textimage .textimage-right {
+  float: right;
+  margin-left: 8px;
+}
+.textimage .textimage-overlap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 2% 5%;
+}
+.textimage .textimage-row {
+  position: relative;
+  overflow: hidden;
+}
+.textimage .textimage-col {
+  padding: 0;
+}
